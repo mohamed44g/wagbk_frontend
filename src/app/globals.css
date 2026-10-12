@@ -1,26 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(-18px) scale(.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* The application uses a shared Tailwind palette. These small global overrides
+   let the existing pages switch theme together from the single toggle. */
+html.dark {
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html.dark body {
+  background-color: #0b1f31;
+  color: #eaf3fa;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html.dark [class~="bg-[#F7F9FC]"] {
+  background-color: #0b1f31 !important;
+}
+
+html.dark [class~="bg-[#FFF9E8]"] {
+  background-color: #362c12 !important;
+}
+
+html.dark [class~="bg-white"] {
+  background-color: #12304a !important;
+}
+
+html.dark [class~="bg-white/60"] {
+  background-color: rgb(18 48 74 / 72%) !important;
+}
+
+html.dark [class~="bg-[#EFF6FF]"],
+html.dark [class~="bg-[#DCEBFA]"] {
+  background-color: #163750 !important;
+}
+
+html.dark [class~="bg-[#EAF7E5]"],
+html.dark [class~="bg-[#F0FDF4]"] {
+  background-color: #193a2a !important;
+}
+
+html.dark [class~="bg-[#FEF3F2]"],
+html.dark [class~="bg-[#FEF2F2]"],
+html.dark [class~="bg-[#FEE2E2]"],
+html.dark [class~="bg-[#FDE2E1]"] {
+  background-color: #4a2024 !important;
+}
+
+html.dark [class~="border-[#DCE4EF]"] {
+  border-color: #28506c !important;
+}
+
+html.dark [class~="border-[#B5C9DD]"] {
+  border-color: #416783 !important;
+}
+
+html.dark [class~="border-[#FECACA]"] {
+  border-color: #91434b !important;
+}
+
+html.dark [class~="text-[#1F2937]"] {
+  color: #eaf3fa !important;
+}
+
+html.dark [class~="text-[#6B7280]"] {
+  color: #abc0d1 !important;
+}
+
+html.dark [class~="bg-[#EAF7E5]"] [class~="text-[#27743A]"],
+html.dark [class~="bg-[#F0FDF4]"] [class~="text-[#27743A]"],
+html.dark [class~="bg-[#EAF7E5]"] [class~="text-[#68AB48]"] {
+  color: #a9df91 !important;
+}
+
+html.dark [class~="bg-[#FEF3F2]"] [class~="text-[#B42318]"],
+html.dark [class~="bg-[#FEF2F2]"] [class~="text-[#B42318]"],
+html.dark [class~="bg-[#FEE2E2]"] [class~="text-[#B42318]"],
+html.dark [class~="bg-[#FDE2E1]"] [class~="text-[#7F1D1D]"] {
+  color: #fca5a5 !important;
+}
+
+html.dark [class~="text-[#173F5F]"] {
+  color: #eaf3fa !important;
+}
+
+html.dark [class~="bg-[#F6C445]"] {
+  color: #173f5f;
+}
+
+html.dark [class~="bg-[#F6C445]"][class~="text-[#173F5F]"],
+html.dark [class~="bg-[#F6C445]"] [class~="text-[#173F5F]"] {
+  color: #173f5f !important;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  color-scheme: dark;
 }
