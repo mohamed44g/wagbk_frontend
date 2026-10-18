@@ -108,7 +108,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#F7F9FC] text-[#1F2937]">
       <section aria-labelledby="hero-title">
-        <header className="mx-auto grid min-h-[108px] w-[calc(100%-6rem)] max-w-[1400px] grid-cols-[1fr_auto_1fr] items-center gap-8 max-md:min-h-[78px] max-md:w-[calc(100%-3rem)] max-md:grid-cols-[1fr_auto]">
+        <header className="mx-auto grid min-h-[108px] w-[calc(100%-6rem)] max-w-[1400px] grid-cols-[1fr_auto_1fr] items-center gap-8 max-md:min-h-[78px] max-md:w-[calc(100%-2rem)] max-md:grid-cols-[1fr_auto]">
           <a className="justify-self-start text-[31px] font-black tracking-[-1.5px] text-[#173F5F] max-md:text-[27px]" href="#top" aria-label="واجبك - الرئيسية">
             واجبك<span className="text-[#F6C445]">.</span>
           </a>
@@ -131,14 +131,14 @@ export default function Home() {
           </div>
         </header>
 
-        <div className="mx-auto grid min-h-[570px] w-[calc(100%-6rem)] max-w-[1400px] translate-y-10 grid-cols-[minmax(650px,760px)_minmax(500px,560px)] items-center justify-between gap-8 pt-[18px] max-lg:flex max-lg:w-[calc(100%-4rem)] max-lg:translate-y-0 max-lg:flex-col max-lg:gap-8 max-lg:pt-9 max-md:w-[calc(100%-3rem)] max-md:gap-6" id="top">
+        <div className="mx-auto grid min-h-[570px] w-[calc(100%-6rem)] max-w-[1400px] translate-y-10 grid-cols-[minmax(650px,760px)_minmax(500px,560px)] items-center justify-between gap-8 pt-[18px] max-lg:flex max-lg:w-[calc(100%-4rem)] max-lg:translate-y-0 max-lg:flex-col max-lg:gap-8 max-lg:pt-9 max-md:w-[calc(100%-2rem)] max-md:gap-5" id="top">
           <div className="z-10 w-full translate-y-12 justify-self-end self-center pb-4 max-lg:mx-auto max-lg:max-w-[700px] max-lg:translate-y-0 max-lg:text-center max-md:pb-0" data-aos="fade-left">
             <p className="mb-4 inline-flex items-center gap-2 text-[14px] font-extrabold text-[#20639B]">
               <span className="size-[9px] rounded-full bg-[#F6C445] shadow-[0_0_0_4px_rgba(246,196,69,.24)]" />
               منصة واجبات لكل سنتر
             </p>
 
-            <h1 className="max-w-[680px] text-[clamp(48px,5vw,74px)] font-black leading-[1.15] tracking-[-3.5px] text-[#173F5F] max-md:max-w-[520px] max-md:text-[clamp(42px,12.7vw,61px)] max-md:tracking-[-2.7px]" id="hero-title">
+            <h1 className="max-w-[680px] text-[clamp(48px,5vw,74px)] font-black leading-[1.15] tracking-[-3.5px] text-[#173F5F] max-md:max-w-[520px] max-md:text-[clamp(38px,11.5vw,54px)] max-md:tracking-[-2px]" id="hero-title">
               ذاكر بتركيز، سلّم في معادك.
             </h1>
 
@@ -146,24 +146,24 @@ export default function Home() {
               كل واجباتك، درجاتك، وأخطائك المهمة في مكان واحد عشان تراجع أسرع وتوصل لنتيجة أحسن.
             </p>
 
-            <div className="mt-7 flex items-center gap-[22px] max-lg:justify-center">
-              <a className="inline-flex items-center gap-2 rounded-full border-2 border-[#173F5F] bg-[#F6C445] px-5 py-3 text-[15px] font-black text-[#173F5F] shadow-[4px_4px_0_#173F5F] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0_#173F5F]" href="/login?role=student">
+            <div className="mt-7 flex items-center gap-[22px] max-lg:justify-center max-md:flex-col max-md:items-stretch max-md:gap-3">
+              <a className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#173F5F] bg-[#F6C445] px-5 py-3 text-[15px] font-black text-[#173F5F] shadow-[4px_4px_0_#173F5F] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0_#173F5F]" href="/login?role=student">
                 ابدأ دلوقتي
                 <ArrowIcon />
               </a>
-              <a className="text-[14px] font-extrabold text-[#20639B] underline decoration-1 underline-offset-[5px]" href="#how-it-works">
+              <a className="text-center text-[14px] font-extrabold text-[#20639B] underline decoration-1 underline-offset-[5px]" href="#how-it-works">
                 شوف إزاي بيشتغل
               </a>
             </div>
 
-            <div className="mt-12 flex w-full items-center justify-end gap-[7px] [direction:ltr] max-lg:justify-center" aria-hidden="true">
+            <div className="mt-10 flex w-full items-center justify-end gap-[7px] [direction:ltr] max-lg:justify-center max-md:mt-8" aria-hidden="true">
               <span className="h-[26px] w-[78px] rounded-full bg-[#173F5F] shadow-[0_4px_0_rgba(23,63,95,.14)]" />
               <span className="h-[26px] w-8 rounded-full bg-[#F6C445] shadow-[0_4px_0_rgba(23,63,95,.14)]" />
               <span className="h-[26px] w-[17px] rounded-full bg-[#20639B] shadow-[0_4px_0_rgba(23,63,95,.14)]" />
               <span className="h-[26px] w-[45px] rounded-full bg-[#68AB48] shadow-[0_4px_0_rgba(23,63,95,.14)]" />
             </div>
 
-            <article className="mx-0 mt-12 w-full max-w-[390px] rounded-[20px] border-2 border-[#173F5F] bg-white p-[17px_20px] shadow-[5px_5px_0_rgba(23,63,95,.16)] max-lg:mx-auto">
+            <article className="mx-0 mt-10 w-full max-w-[390px] rounded-[20px] border-2 border-[#173F5F] bg-white p-[17px_20px] shadow-[5px_5px_0_rgba(23,63,95,.16)] max-lg:mx-auto max-md:mt-8 max-md:p-4">
               <div className="flex items-center justify-between gap-3 border-b border-[#DCE4EF] pb-3 text-[13px] font-black text-[#173F5F]">
                 <span>واجب النهارده</span>
                 <span className="text-[11px] text-[#68AB48]">متبقي 3 أسئلة</span>
@@ -178,22 +178,22 @@ export default function Home() {
 
           </div>
 
-          <div className="relative isolate min-h-[570px] w-[560px] justify-self-start max-lg:mx-auto max-lg:min-h-[520px] max-lg:w-full max-lg:max-w-[560px] max-lg:self-center max-md:mt-1 max-sm:min-h-[455px]" aria-label="طالب يستخدم منصة واجبك" data-aos="fade-right">
+          <div className="relative isolate min-h-[570px] w-[560px] justify-self-start max-lg:mx-auto max-lg:min-h-[520px] max-lg:w-full max-lg:max-w-[560px] max-lg:self-center max-md:mt-0 max-md:min-h-[430px] max-sm:min-h-[390px]" aria-label="طالب يستخدم منصة واجبك" data-aos="fade-right">
             <div className="absolute right-[43px] top-[92px] -z-20 h-[416px] w-[394px] rotate-[-6deg] rounded-[44%_46%_32%_48%] bg-[#173F5F] max-md:right-[4%] max-md:top-[92px] max-md:h-[min(80vw,400px)] max-md:w-[min(77vw,385px)]" />
             <div className="absolute right-[62px] top-[74px] -z-20 h-[425px] w-[395px] rotate-[-6deg] rounded-[47%_34%_49%_35%] bg-[#20639B] max-md:right-[8%] max-md:top-20 max-md:h-[min(81vw,405px)] max-md:w-[min(77vw,385px)]" />
             <div className="absolute right-[100px] top-[54px] -z-20 h-[432px] w-[390px] rotate-[-6deg] rounded-[42%_49%_40%_46%] bg-[#F6C445] max-md:right-[14%] max-md:top-[65px] max-md:h-[min(82vw,410px)] max-md:w-[min(76vw,380px)]" />
             <div className="absolute right-[35px] top-7 -z-30 h-[180px] w-[220px] opacity-90 [background-image:radial-gradient(#F6C445_2px,transparent_2px)] [background-size:16px_16px]" />
 
-            <div className="absolute left-0 top-16 z-30 grid gap-2 max-lg:-left-[18px] max-md:left-0 max-md:top-[50px] max-md:gap-[5px]" aria-label="مواد دراسية">
+            <div className="absolute left-0 top-16 z-30 grid gap-2 max-lg:-left-[18px] max-md:left-[1%] max-md:top-[38px] max-md:gap-[5px]" aria-label="مواد دراسية">
               {["رياضيات", "فيزياء", "لغة عربية", "كيمياء"].map((subject, index) => (
-                <span className={`min-w-[132px] rounded-full border-2 border-[#173F5F] bg-[#F7F9FC]/95 px-[18px] py-[9px] text-center text-[13px] font-extrabold text-[#173F5F] shadow-[4px_4px_0_#173F5F] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0_#173F5F] max-md:min-w-[98px] max-md:px-2.5 max-md:py-[7px] max-md:text-[11px] ${index === 0 ? "bg-[#F6C445]" : ""}`} key={subject}>
+                <span className={`min-w-[132px] rounded-full border-2 border-[#173F5F] bg-[#F7F9FC]/95 px-[18px] py-[9px] text-center text-[13px] font-extrabold text-[#173F5F] shadow-[4px_4px_0_#173F5F] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0_#173F5F] max-md:min-w-[90px] max-md:px-2 max-md:py-[6px] max-md:text-[10px] ${index === 0 ? "bg-[#F6C445]" : ""}`} key={subject}>
                   {subject}
                 </span>
               ))}
             </div>
 
             <Image
-              className="absolute bottom-0 right-[105px] z-10 h-auto w-[470px] max-w-[75%] drop-shadow-[0_18px_10px_rgba(23,63,95,.14)] max-md:right-[7%] max-md:w-[425px] max-md:max-w-[80vw]"
+              className="absolute bottom-0 right-[105px] z-10 h-auto w-[470px] max-w-[75%] drop-shadow-[0_18px_10px_rgba(23,63,95,.14)] max-md:right-[4%] max-md:w-[390px] max-md:max-w-[90vw]"
               src="/images/hero-student.png"
               alt="طالب يحمل هاتفه ودفتر مذاكرة"
               width={1086}

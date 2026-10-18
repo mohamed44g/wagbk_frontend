@@ -88,12 +88,13 @@ html.dark [class~="text-[#173F5F]"] {
 }
 
 html.dark [class~="bg-[#F6C445]"] {
-  color: #173f5f;
+  background-color: #b98d12 !important;
+  color: #ffffff !important;
 }
 
 html.dark [class~="bg-[#F6C445]"][class~="text-[#173F5F]"],
 html.dark [class~="bg-[#F6C445]"] [class~="text-[#173F5F]"] {
-  color: #173f5f !important;
+  color: #ffffff !important;
 }
 
 html.dark input,
