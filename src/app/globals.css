@@ -97,6 +97,20 @@ html.dark [class~="bg-[#F6C445]"] [class~="text-[#173F5F]"] {
   color: #ffffff !important;
 }
 
+/* The subject pills use a semi-transparent light background. In dark mode,
+   keep their surface dark too so the white text remains readable. */
+html.dark .hero-subject {
+  background-color: #173f5f !important;
+  border-color: #416783 !important;
+  color: #ffffff !important;
+}
+
+html.dark .hero-subject-active {
+  background-color: #b98d12 !important;
+  border-color: #173f5f !important;
+  color: #ffffff !important;
+}
+
 html.dark input,
 html.dark textarea,
 html.dark select {

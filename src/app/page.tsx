@@ -186,14 +186,14 @@ export default function Home() {
 
             <div className="absolute left-0 top-16 z-30 grid gap-2 max-lg:-left-[18px] max-md:left-[1%] max-md:top-[38px] max-md:gap-[5px]" aria-label="مواد دراسية">
               {["رياضيات", "فيزياء", "لغة عربية", "كيمياء"].map((subject, index) => (
-                <span className={`min-w-[132px] rounded-full border-2 border-[#173F5F] bg-[#F7F9FC]/95 px-[18px] py-[9px] text-center text-[13px] font-extrabold text-[#173F5F] shadow-[4px_4px_0_#173F5F] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0_#173F5F] max-md:min-w-[90px] max-md:px-2 max-md:py-[6px] max-md:text-[10px] ${index === 0 ? "bg-[#F6C445]" : ""}`} key={subject}>
+                <span className={`hero-subject ${index === 0 ? "hero-subject-active" : ""} min-w-[132px] rounded-full border-2 border-[#173F5F] bg-[#F7F9FC]/95 px-[18px] py-[9px] text-center text-[13px] font-extrabold text-[#173F5F] shadow-[4px_4px_0_#173F5F] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0_#173F5F] max-md:min-w-[90px] max-md:px-2 max-md:py-[6px] max-md:text-[10px] ${index === 0 ? "bg-[#F6C445]" : ""}`} key={subject}>
                   {subject}
                 </span>
               ))}
             </div>
 
             <Image
-              className="absolute bottom-0 right-[105px] z-10 h-auto w-[470px] max-w-[75%] drop-shadow-[0_18px_10px_rgba(23,63,95,.14)] max-md:right-[4%] max-md:w-[390px] max-md:max-w-[90vw]"
+              className="absolute bottom-0 right-[105px] z-10 h-auto w-[470px] max-w-[75%] drop-shadow-[0_18px_10px_rgba(23,63,95,.14)] max-md:right-[8%] max-md:w-[clamp(270px,65vw,350px)] max-md:max-w-[76vw]"
               src="/images/hero-student.png"
               alt="طالب يحمل هاتفه ودفتر مذاكرة"
               width={1086}
