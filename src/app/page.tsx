@@ -109,8 +109,8 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden bg-[#F7F9FC] text-[#1F2937]">
       <section aria-labelledby="hero-title">
         <header className="mx-auto grid min-h-[108px] w-[calc(100%-6rem)] max-w-[1400px] grid-cols-[1fr_auto_1fr] items-center gap-8 max-md:min-h-[78px] max-md:w-[calc(100%-2rem)] max-md:grid-cols-[1fr_auto]">
-          <a className="justify-self-start text-[31px] font-black tracking-[-1.5px] text-[#173F5F] max-md:text-[27px]" href="#top" aria-label="واجبك - الرئيسية">
-            واجبك<span className="text-[#F6C445]">.</span>
+          <a className="inline-flex justify-self-start items-center rounded-[14px] bg-white p-1.5 shadow-[2px_2px_0_rgba(23,63,95,.12)]" href="#top" aria-label="واجبك - الرئيسية">
+            <Image className="h-auto w-[112px] max-md:w-[88px]" src="/images/wagbk-wordmark.png" alt="واجبك" width={760} height={680} priority />
           </a>
 
           <nav className="flex items-center gap-8 text-[15px] font-bold text-[#173F5F] max-md:hidden" aria-label="التنقل الرئيسي">
@@ -290,7 +290,7 @@ export default function Home() {
                 <div className="rotate-[5deg]">
                   <span className="text-[13px] font-black text-[#20639B]">منصة واحدة</span>
                   <strong className="mt-2 block text-[42px] font-black tracking-[-2px] text-[#173F5F]">واجبك</strong>
-                  <span className="mt-2 inline-flex rounded-full bg-white px-3 py-1 text-[11px] font-black text-[#173F5F]">أوضح. أسرع.</span>
+                  <span className="mt-2 inline-flex rounded-full bg-white px-3 py-1 text-[11px] font-black text-[#173F5F]">إدارة أذكى. متابعة أسهل.</span>
                 </div>
               </div>
             </div>
@@ -580,11 +580,11 @@ export default function Home() {
         <div className="mx-auto w-[calc(100%-6rem)] max-w-[1400px] py-16 max-lg:w-[calc(100%-4rem)] max-md:w-[calc(100%-3rem)]">
           <div className="grid grid-cols-[1.5fr_1fr_1fr_1.2fr] gap-12 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:gap-10">
             <div className="max-w-[300px]">
-              <a className="text-[31px] font-black tracking-[-1.5px] text-white" href="#top">
-                واجبك<span className="text-[#F6C445]">.</span>
+              <a className="inline-flex rounded-[16px] bg-white p-2" href="#top" aria-label="واجبك - الرئيسية">
+                <Image className="h-auto w-[210px] max-md:w-[190px]" src="/images/wagbk-logo.png" alt="شعار واجبك" width={1070} height={770} />
               </a>
               <p className="mt-5 text-[14px] leading-[1.9] text-[#B5C9DD]">
-                منصة بسيطة تخلي المذاكرة أوضح، ومتابعة الواجبات أسرع للطالب والمدرس.
+                منصة تعليمية لإدارة الواجبات وتصحيحها ورصد الدرجات ومتابعة أداء الطلاب بسهولة، مع تنظيم الواجبات وإتاحة مراجعة الأخطاء ومراقبة المستوى في مكان واحد.
               </p>
             </div>
             <div>
