@@ -20,7 +20,7 @@ export default function AuthShell({
   children,
 }: AuthShellProps) {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#F7F9FC] text-[#1F2937]">
+    <main className="min-h-screen overflow-x-hidden bg-[#F7F9FC] text-[#1F2937]">
       <div className="mx-auto grid min-h-screen w-full max-w-none grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <section className="relative hidden min-w-0 overflow-hidden bg-[#173F5F] px-16 py-14 text-white lg:flex lg:flex-col lg:justify-between">
           <div className="absolute -left-24 -top-24 size-[360px] rounded-full border-[42px] border-[#20639B]" />

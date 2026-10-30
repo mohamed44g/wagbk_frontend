@@ -165,7 +165,7 @@ export default function RegisterPage() {
                 <span>{selectedSubjectIds.length ? `تم اختيار ${selectedSubjectIds.length} مادة` : "اختار مادة أو أكتر"}</span>
                 <span className="text-[18px] transition group-open:rotate-180">⌄</span>
               </summary>
-              <div className="absolute right-0 z-20 mt-2 w-full rounded-[16px] border-2 border-[#173F5F] bg-white p-2 shadow-[4px_4px_0_#173F5F]">
+              <div className="absolute right-0 z-20 mt-2 max-h-[min(58vh,460px)] w-full overflow-y-auto overscroll-contain rounded-[16px] border-2 border-[#173F5F] bg-white p-2 shadow-[4px_4px_0_#173F5F]">
                 {subjects.map((subjectOption) => {
                   const selected = selectedSubjectIds.includes(subjectOption.id);
                   return (
