@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-const navItems = ["الرئيسية", "المميزات", "إزاي بيشتغل", "للمدرسين"];
+const navItems = [
+  { label: "الرئيسية", href: "#top" },
+  { label: "المميزات", href: "#features" },
+  { label: "إزاي بيشتغل", href: "#how-it-works" },
+  { label: "للمدرسين", href: "#roles" },
+] as const;
 
 function ArrowIcon() {
   return (
@@ -115,8 +120,8 @@ export default function Home() {
 
           <nav className="flex items-center gap-8 text-[15px] font-bold text-[#173F5F] max-md:hidden" aria-label="التنقل الرئيسي">
             {navItems.map((item) => (
-              <a className="transition hover:-translate-y-0.5 hover:text-[#173F5F]" href={`#${item}`} key={item}>
-                {item}
+              <a className="transition hover:-translate-y-0.5 hover:text-[#173F5F]" href={item.href} key={item.href}>
+                {item.label}
               </a>
             ))}
           </nav>
