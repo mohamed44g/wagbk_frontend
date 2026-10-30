@@ -17,6 +17,11 @@ html.dark body {
   color: #eaf3fa;
 }
 
+html.dark .site-header {
+  background-color: rgb(11 31 49 / 95%);
+  border-color: rgb(65 103 131 / 70%);
+}
+
 html.dark [class~="bg-[#F7F9FC]"] {
   background-color: #0b1f31 !important;
 }

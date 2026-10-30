@@ -111,9 +111,9 @@ const steps = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#F7F9FC] text-[#1F2937]">
+    <main className="min-h-screen overflow-x-clip bg-[#F7F9FC] text-[#1F2937]">
       <section aria-labelledby="hero-title">
-        <header className="mx-auto grid min-h-[108px] w-[calc(100%-6rem)] max-w-[1400px] grid-cols-[1fr_auto_1fr] items-center gap-8 max-md:min-h-[78px] max-md:w-[calc(100%-2rem)] max-md:grid-cols-[1fr_auto]">
+        <header className="site-header sticky top-0 z-50 mx-auto grid min-h-[108px] w-full max-w-[1400px] grid-cols-[1fr_auto_1fr] items-center gap-8 border-b border-[#DCE4EF]/70 bg-[#F7F9FC]/95 px-8 backdrop-blur-md max-md:min-h-[78px] max-md:px-4 max-md:grid-cols-[1fr_auto]">
           <a className="inline-flex justify-self-start items-center" href="#top" aria-label="واجبك - الرئيسية">
             <Image className="brand-logo-header h-auto w-[108px] max-md:w-[84px]" src="/images/wagbk-wordmark.png" alt="واجبك" width={760} height={680} priority />
           </a>
