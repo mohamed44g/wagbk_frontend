@@ -43,13 +43,7 @@ export default function LoginPage() {
       });
       saveAuthSession(data);
       showToast({ type: "success", message: "تم تسجيل الدخول بنجاح." });
-      router.push(
-        data.user.role === "student"
-          ? "/student"
-          : data.user.role === "teacher"
-            ? "/teacher"
-            : "/admin",
-      );
+      router.push(data.user.role === "student" ? "/student" : "/teacher");
     } catch (submitError) {
       const message = getApiError(submitError);
       setError(message);
@@ -71,23 +65,22 @@ export default function LoginPage() {
       <form className="grid gap-5" onSubmit={handleSubmit}>
         <div>
           <span className="text-[14px] font-black text-[#173F5F]">انت داخل بصفتك ايه؟</span>
-          <div className="mt-3 grid grid-cols-3 gap-3">
+          <div className="mt-3 grid grid-cols-2 gap-3">
             <button className={roleClass(role === "student")} onClick={() => setRole("student")} type="button">طالب</button>
             <button className={roleClass(role === "teacher")} onClick={() => setRole("teacher")} type="button">مدرس</button>
-            <button className={roleClass(role === "super_admin")} onClick={() => setRole("super_admin")} type="button">أدمن</button>
           </div>
         </div>
 
         <label className="text-[14px] font-black text-[#173F5F]">
-          {role === "super_admin" ? "البريد الإلكتروني" : "رقم الموبايل"}
+          رقم الموبايل
           <input
             className={inputClass}
-            inputMode={role === "super_admin" ? "email" : "tel"}
+            inputMode="tel"
             name="identifier"
             onChange={(event) => setIdentifier(event.target.value)}
-            placeholder={role === "super_admin" ? "admin@example.com" : "01012345678"}
+            placeholder="01012345678"
             required
-            type={role === "super_admin" ? "email" : "tel"}
+            type="tel"
             value={identifier}
           />
         </label>

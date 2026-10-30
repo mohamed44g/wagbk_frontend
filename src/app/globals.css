@@ -97,6 +97,12 @@ html.dark [class~="bg-[#F6C445]"] [class~="text-[#173F5F]"] {
   color: #ffffff !important;
 }
 
+/* Keep the brand readable on the dark surface without changing the light theme. */
+html.dark .brand-logo-header,
+.brand-logo-footer {
+  filter: brightness(0) invert(1);
+}
+
 /* The subject pills use a semi-transparent light background. In dark mode,
    keep their surface dark too so the white text remains readable. */
 html.dark .hero-subject {

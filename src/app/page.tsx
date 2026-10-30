@@ -110,7 +110,7 @@ export default function Home() {
       <section aria-labelledby="hero-title">
         <header className="mx-auto grid min-h-[108px] w-[calc(100%-6rem)] max-w-[1400px] grid-cols-[1fr_auto_1fr] items-center gap-8 max-md:min-h-[78px] max-md:w-[calc(100%-2rem)] max-md:grid-cols-[1fr_auto]">
           <a className="inline-flex justify-self-start items-center" href="#top" aria-label="واجبك - الرئيسية">
-            <Image className="h-auto w-[108px] max-md:w-[84px]" src="/images/wagbk-wordmark.png" alt="واجبك" width={760} height={680} priority />
+            <Image className="brand-logo-header h-auto w-[108px] max-md:w-[84px]" src="/images/wagbk-wordmark.png" alt="واجبك" width={760} height={680} priority />
           </a>
 
           <nav className="flex items-center gap-8 text-[15px] font-bold text-[#173F5F] max-md:hidden" aria-label="التنقل الرئيسي">
@@ -135,11 +135,11 @@ export default function Home() {
           <div className="z-10 w-full translate-y-12 justify-self-end self-center pb-4 max-lg:mx-auto max-lg:max-w-[700px] max-lg:translate-y-0 max-lg:text-center max-md:pb-0" data-aos="fade-left">
             <p className="mb-4 inline-flex items-center gap-2 text-[14px] font-extrabold text-[#20639B]">
               <span className="size-[9px] rounded-full bg-[#F6C445] shadow-[0_0_0_4px_rgba(246,196,69,.24)]" />
-              منصة واجبات لكل سنتر
+              وداعًا لنظام الواجبات التقليدي.. أهلًا بالحل الذكي
             </p>
 
             <h1 className="max-w-[680px] text-[clamp(48px,5vw,74px)] font-black leading-[1.15] tracking-[-3.5px] text-[#173F5F] max-md:max-w-[520px] max-md:text-[clamp(38px,11.5vw,54px)] max-md:tracking-[-2px]" id="hero-title">
-              ذاكر بتركيز، سلّم في معادك.
+              إدارة أذكى للواجبات.. ومتابعة أسهل للطلاب
             </h1>
 
             <p className="mt-5 max-w-[400px] text-[17px] font-medium leading-[1.95] text-[#1F2937] max-md:max-w-[480px] max-md:text-[15px]">
@@ -162,19 +162,6 @@ export default function Home() {
               <span className="h-[26px] w-[17px] rounded-full bg-[#20639B] shadow-[0_4px_0_rgba(23,63,95,.14)]" />
               <span className="h-[26px] w-[45px] rounded-full bg-[#68AB48] shadow-[0_4px_0_rgba(23,63,95,.14)]" />
             </div>
-
-            <article className="mx-0 mt-10 w-full max-w-[390px] rounded-[20px] border-2 border-[#173F5F] bg-white p-[17px_20px] shadow-[5px_5px_0_rgba(23,63,95,.16)] max-lg:mx-auto max-md:mt-8 max-md:p-4">
-              <div className="flex items-center justify-between gap-3 border-b border-[#DCE4EF] pb-3 text-[13px] font-black text-[#173F5F]">
-                <span>واجب النهارده</span>
-                <span className="text-[11px] text-[#68AB48]">متبقي 3 أسئلة</span>
-              </div>
-              <div className="flex items-center justify-between gap-3 pt-[13px]">
-                <span className="grid size-[27px] place-items-center rounded-[9px] bg-[#F6C445] text-[12px] font-black text-[#173F5F]">01</span>
-                <p className="m-0 flex-1 text-[12px] font-bold text-[#1F2937]">اختار الإجابة الصحيحة.</p>
-                <div className="h-[7px] w-[58px] overflow-hidden rounded-full bg-[#DCE4EF]"><i className="block h-full w-[62%] rounded-full bg-[#20639B]" /></div>
-              </div>
-            </article>
-
 
           </div>
 
@@ -581,7 +568,7 @@ export default function Home() {
           <div className="grid grid-cols-[1.5fr_1fr_1fr_1.2fr] gap-12 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:gap-10">
             <div className="max-w-[300px]">
               <a className="inline-flex" href="#top" aria-label="واجبك - الرئيسية">
-                <Image className="h-auto w-[210px] max-md:w-[190px]" src="/images/wagbk-logo.png" alt="شعار واجبك" width={1070} height={770} />
+                <Image className="brand-logo-footer h-auto w-[210px] max-md:w-[190px]" src="/images/wagbk-logo.png" alt="شعار واجبك" width={1070} height={770} />
               </a>
               <p className="mt-5 text-[14px] leading-[1.9] text-[#B5C9DD]">
                 منصة تعليمية لإدارة الواجبات وتصحيحها ورصد الدرجات ومتابعة أداء الطلاب بسهولة، مع تنظيم الواجبات وإتاحة مراجعة الأخطاء ومراقبة المستوى في مكان واحد.

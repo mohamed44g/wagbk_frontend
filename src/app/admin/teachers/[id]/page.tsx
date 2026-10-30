@@ -86,7 +86,7 @@ export default function AdminTeacherDetailPage() {
   useEffect(() => {
     const session = getStoredSession();
     if (!session || session.user.role !== "super_admin") {
-      router.replace("/login");
+      router.replace("/admin/login");
       return;
     }
 
@@ -120,7 +120,7 @@ export default function AdminTeacherDetailPage() {
               className="rounded-full border-2 border-[#173F5F] bg-[#F6C445] px-4 py-2 text-[12px] font-black text-[#173F5F] shadow-[3px_3px_0_#173F5F]"
               onClick={() => {
                 window.localStorage.clear();
-                router.push("/login");
+                router.push("/admin/login");
               }}
               type="button"
             >
